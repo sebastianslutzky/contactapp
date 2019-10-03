@@ -188,6 +188,11 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>org.ebaysf.web</groupId>
+                <artifactId>cors-filter</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
                 <groupId>org.togglz</groupId>
                 <artifactId>togglz-servlet</artifactId>
                 <version>${togglz.version}</version>

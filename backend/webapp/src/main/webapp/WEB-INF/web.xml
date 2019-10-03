@@ -34,7 +34,6 @@
         <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
     </listener>
 
-
     <filter>
         <filter-name>CORS Filter</filter-name>
         <filter-class>org.ebaysf.web.cors.CORSFilter</filter-class>
@@ -45,6 +44,11 @@
         <init-param>
             <param-name>cors.allowed.headers</param-name>
             <param-value>Content-Type,Accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization,Cache-Control,If-Modified-Since,Pragma</param-value>
+        </init-param>
+        <init-param>
+            <description>A comma separated list of HTTP verbs, using which a CORS request can be made.</description>
+            <param-name>cors.allowed.methods</param-name>
+            <param-value>GET,POST,HEAD,OPTIONS,PUT,DELETE</param-value>
         </init-param>
     </filter>
     <filter-mapping>
