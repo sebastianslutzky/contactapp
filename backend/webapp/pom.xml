@@ -136,6 +136,11 @@
             <groupId>org.togglz</groupId>
             <artifactId>togglz-console</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.incode.module.settings</groupId>
+            <artifactId>incode-module-settings-dom</artifactId>
+            <version>1.17.0</version>
+        </dependency>
 
     </dependencies>
 
