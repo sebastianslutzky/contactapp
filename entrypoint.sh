@@ -8,7 +8,7 @@ echo_error() {
 }
 
 # place of the overrides file
-overrides="/usr/local/tomcat/webapps/contacts/WEB-INF/overrides.properties"
+overrides="/usr/local/tomcat/webapps/ROOT/WEB-INF/overrides.properties"
 props=""
 
 # Parsing opts
@@ -32,7 +32,7 @@ done
 if [ -n "$props" ]; then
     echo > $overrides
     for prop in $(echo $props | tr ";" "\n"); do
-        echo "$prop;" >> $overrides
+        echo "$prop" >> $overrides
     done
 fi
 
